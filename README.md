@@ -1,11 +1,14 @@
 <h1> ¡Hola! Mi Nombre es Jose Alvaro Martinez Alcantara
   
-### Acerca de mí
-- Tengo 34 años
-- Actualmente cursando Fundamento de Python
+# Pokedex 
 
-## Trabajos entregados:
-- Entregando Longitud de una frase
-##### En este codigo utilizamos la funcion evaluar_longitud_palabra() para determionar la cantidad de caracteres que tiene un palabra y aplicamos condicionales if y elif para determinar si la palabra escrita era correcta, así como para imprir el codigo correspondiente, asi como  la impresion de los codigos si tenia mas o menos palabras
-- Entregando Encuentra el cuadrante
-##### En este codigo, me guie con el demo que nos brindaron, encontre un error al correrlo, corregi el cuadrante cuatro y en lugar de usar varios if, los sustitui por elif para crear condicionales mas simples.
+Esta aplicación en Python te permite obtener información detallada sobre cualquier Pokémon utilizando la API de PokeAPI. La información obtenida se guarda en un archivo JSON para su uso posterior.
+
+## Requisitos
+
+- Python 3.x
+- Librerías requests, os y json
+
+## Funciones
+
+La función principal que solicita al usuario el nombre de un pokemon, obtiene la información y la guarda en un archivo json.
