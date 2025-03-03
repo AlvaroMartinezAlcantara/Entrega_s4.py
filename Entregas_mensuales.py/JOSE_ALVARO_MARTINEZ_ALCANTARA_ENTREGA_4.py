@@ -47,3 +47,4 @@ def main():
 
 if __name__ == "__main__": # Comprobar si el script se esta ejecutando directamente
     main()  # Llamar a la funcion principal para iniciar el programa
+    
