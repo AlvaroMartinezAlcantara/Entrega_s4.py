@@ -11,8 +11,8 @@ def maquina_galton(n_canicas=3000, n_niveles=12):
     contenedores = np.zeros(n_niveles + 1, dtype=int)
 # Usamos un ciclo for para contar las n_canicas
     for _ in range(n_canicas):
-#generamos una lista de valores aleatorios donde 0es a la izquierda y 1 es a la derecha
-        posicion = sum(np.random.choice([0, 1], size=n_niveles))  # 0 = izquierda, 1 = derecha
+#generamos una lista de valores aleatorios donde 0 es a la izquierda y 1 es a la derecha
+        posicion = sum(np.random.choice([0, 1], size=n_niveles)) 
 #Registramos el conteo de donde han caido las canicas
         contenedores[posicion] += 1
     
@@ -27,13 +27,13 @@ def graficar_histograma(contenedores):
     plt.hist(range(len(contenedores)), bins=len(contenedores), weights=contenedores, color='dodgerblue',)
 #Asignamos nombre al eje x
     plt.xlabel('Posición del Contenedor')
-    #Asignamos nombre al eje y
+#Asignamos nombre al eje y
     plt.ylabel('Cantidad de Canicas')
 #Asigamos el nombre al histograma 
     plt.title('Máquina de Galton')
 #Mandamos mostrar el grafico
     plt.show()
 
-# Ejecutar simulación y graficar resultados
+# Ejecuta la actividad y grafica los resultados
 contenedores = maquina_galton()
 graficar_histograma(contenedores)
